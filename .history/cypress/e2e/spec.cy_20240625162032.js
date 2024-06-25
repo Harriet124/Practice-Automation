@@ -5,7 +5,7 @@ describe('template spec', () => {
     cy.get('[data-cy="name"]').type("emma");
     cy.get('[for="drink1"]').click();
     cy.get('[for="color2"]').type("Blue");
-    cy.get('[data-cy="siblings"]').select("Yes");
+    cy.get('[data-cy="siblings"]').select
 
     
 
