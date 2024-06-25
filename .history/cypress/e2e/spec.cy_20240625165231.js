@@ -8,7 +8,7 @@ describe('template spec', () => {
     cy.get('[data-cy="siblings"]').select("Yes");
     cy.get('[data-cy="email"]').type("harriet@.gmail.com");
     cy.get('[data-cy="message"]').type("Hello World");
-    cy.get('[data-cy="submit-btn"]').click();
+    cy.get('[data-cy="submit-btn"]').
 
     
 

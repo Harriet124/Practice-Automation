@@ -6,9 +6,7 @@ describe('template spec', () => {
     cy.get('[for="drink1"]').click();
     cy.get('[for="color2"]').type("Blue");
     cy.get('[data-cy="siblings"]').select("Yes");
-    cy.get('[data-cy="email"]').type("harriet@.gmail.com");
-    cy.get('[data-cy="message"]').type("Hello World");
-    cy.get('[data-cy="submit-btn"]').click();
+    cy.get('[data-cy="email"]').type("harriet.gmail.co")
 
     
 
