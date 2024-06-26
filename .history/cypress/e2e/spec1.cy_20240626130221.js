@@ -7,8 +7,6 @@ it('passes', () =>{
    // cy.get('#alert').click().should("be.visible");
    // cy.get('#confirm').click().should("be.visible");
    // cy.get('#prompt').click().should("be.visible");
-
-   cy.get('.mt-05 > .wp-block-button > .wp-block-button__link').click();
    
 
 
