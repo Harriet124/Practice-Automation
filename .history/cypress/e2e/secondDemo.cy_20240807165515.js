@@ -6,7 +6,8 @@ describe("Template Spec", () => {
 
   beforeEach(() => {
     cy.visit("https://letcode.in/test");
-    
+
+    // Set up the state needed for each test
     cy.get(":nth-child(3) > .hero-body > div.container > .columns > :nth-child(1) > app-menu > .card > .card-footer > .card-footer-item").click();
     cy.get("#fullName").type("Bene Quayson");
     cy.get("#join").type("Hey Bene, Welcome");
@@ -29,8 +30,8 @@ describe("Template Spec", () => {
     cy.visit("https://letcode.in/dropdowns");
     cy.get("#fruits").select("Mango");
     cy.get("#superheros").select("Ghost Rider");
-    cy.get('#lang').select("java")
-    cy.get('#country').select("Colombia");
+    cy.get(':nth-child(3) > .label').select("Java");
+   
   });
 });
 

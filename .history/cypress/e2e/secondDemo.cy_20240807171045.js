@@ -29,8 +29,8 @@ describe("Template Spec", () => {
     cy.visit("https://letcode.in/dropdowns");
     cy.get("#fruits").select("Mango");
     cy.get("#superheros").select("Ghost Rider");
-    cy.get('#lang').select("java")
-    cy.get('#country').select("Colombia");
+    cy.get(':nth-child(3) > .label').select("J")
+   
   });
 });
 

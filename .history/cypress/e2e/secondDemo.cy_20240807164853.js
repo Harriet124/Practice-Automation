@@ -16,21 +16,23 @@ describe("Template Spec", () => {
     cy.get("#dontwrite").should("have.attr", "readonly");
   });
 
-  it("should test the button", () =>{
+  it("should test the button", () => {
     cy.visit("https://letcode.in/buttons");
     
     cy.get("#home").click();
     cy.get(".content > .button").click();
-    
+
+    // Go back twice
     cy.go("back").go("back");
   });
 
-  it("should test the select functionality", () => { 
+  it("should test the select functionality", () => {
+    // Visit the dropdowns page
     cy.visit("https://letcode.in/dropdowns");
     cy.get("#fruits").select("Mango");
     cy.get("#superheros").select("Ghost Rider");
-    cy.get('#lang').select("java")
-    cy.get('#country').select("Colombia");
+    cy.get(':nth-child(3) > .label').select("Java");
+    cy.get(".filed > .label"),select("India");
+   
   });
 });
-
